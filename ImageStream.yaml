@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: ImageStream
+metadata:
+  name: listener
+spec:
+  tags:
+    - name: listener
+      from:
+        kind: DockerImage
+        name: vishnevii/listener:listener

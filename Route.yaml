@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: listener-route
+spec:
+  to:
+    kind: Service
+    name: listener-service
+  port:
+    targetPort: 8082

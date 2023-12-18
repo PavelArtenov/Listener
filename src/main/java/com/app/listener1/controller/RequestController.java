@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RequestController {
 
-    @GetMapping
+    @GetMapping("listener/save")
     public void saveRequest(@RequestBody Model request) {
         System.out.println(request.getId());
     }

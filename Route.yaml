@@ -5,6 +5,6 @@ metadata:
 spec:
   to:
     kind: Service
-    name: listener-service
+    name: listener-app-service
   port:
     targetPort: 8082
